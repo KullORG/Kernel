@@ -1,0 +1,6 @@
+#!/bin/sh
+echo installing kernel...
+sudo cp bins/bzImage /boot/vmlinuz-kull 
+echo generating new grub config...
+sudo grub-mkconfig -o /boot/grub.cfg
+echo Done
